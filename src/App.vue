@@ -8,6 +8,9 @@
     <router-link to="/contact">Contact</router-link> 
     </nav>
     <router-view/>
+    <body>
+
+    </body>
     <Footer/>
 </template>
 
@@ -27,10 +30,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
 }
 
 nav {
   padding: 30px;
+  background-color:#ECECEC ;
 }
 
 nav a {
@@ -40,5 +45,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+body {
+  background-color:#FF8B13;
 }
 </style>
