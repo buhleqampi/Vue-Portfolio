@@ -24,6 +24,9 @@ export default {
 }
 </script>
 <style scoped>
+img {
+    size:30px;
 
+}
     
 </style>

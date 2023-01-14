@@ -1,16 +1,14 @@
 <template>
-    <div class="col-2" v-for="item in testimonials" :key="item">
+    <div class="container">
         <div>
-        <div class="card">
+        <div v-for="item in testimonials" :key="item" class="card">
             <img :src="item.image" 
-            style="width: 30rem;margin-left:3rem" 
+            style="width: 15rem;align-items: center" 
             />
             <div class="card-body">
                 <h5 class="card-title">{{ item.name }}</h5>
                 <p class="card-text">{{ item.relationship }}</p>
                 <p class="price">{{ item.testimony}}</p>
-                <!-- <button class="btn btn-primary">Go Live</button>
-                <button class="btn btn-primary">Github</button> -->
             </div>
         </div>
     </div>
@@ -32,7 +30,7 @@ data () {
             {
             name: "Candice Amon",
             image:"https://i.postimg.cc/7Y8H2hvY/Candice.jpg",
-            relationship:"Collegue",
+            relationship:"Facilitator",
             testimony: "Buhle is a very kind hearted person.Always ready to extend a helping hand and also knows when to ask for help. She believes in being a positive role model to those who look up to her and carries herself very well. A key value she holds dear is Respect."
             },
             {
@@ -65,5 +63,4 @@ data () {
 } 
 </script>
 <style scoped>
-    
 </style>

@@ -1,21 +1,21 @@
 <template>
-    <div class="col-2" v-for="item in testimonials" :key="item">
-        <div>
-        <div class="card">
-            <img :src="item.image" 
-            style="width: 30rem;margin-left:3rem" 
-            />
-            <div class="card-body">
-                <h5 class="card-title">{{ item.name }}</h5>
-                <p class="card-text">{{ item.relationship }}</p>
-                <p class="price">{{ item.testimony}}</p>
-                <!-- <button class="btn btn-primary">Go Live</button>
-                <button class="btn btn-primary">Github</button> -->
-            </div>
+<div class="container">
+    <div>
+    <div class="col-2" v-for="item in skills" :key="item">
+    <div>
+    <div class="card">
+        <img :src="item.image" 
+        style="width: 15em;align-items: center" 
+        />
+        <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.progress }}</p>
         </div>
     </div>
-    </div>
-    
+</div>
+</div>
+</div>
+</div>
 </template>
 
 <script>
@@ -23,42 +23,36 @@
 export default {
 data () {
     return {
-        projects:[
+        skills:[
             {
-            name: "Kelebogile Nobomvu",
-            image:"https://i.postimg.cc/bw1qghhH/Lebo.jpg",
-            relationship:"Collegue",
-            testimony: "Buhle is a sweet and loving soul. She is a hard worker and once she puts her mind to something she get it done."
+            name: "HTML",
+            image:"https://i.postimg.cc/VksC4C9R/png-clipart-html-5-logo-web-development-html-css3-canvas-element-web-design-w3c-html5-logo-miscellan.png",
+            progress:"90%",
             },
             {
-            name: "Candice Amon",
-            image:"https://i.postimg.cc/7Y8H2hvY/Candice.jpg",
-            relationship:"Collegue",
-            testimony: "Buhle is a very kind hearted person.Always ready to extend a helping hand and also knows when to ask for help. She believes in being a positive role model to those who look up to her and carries herself very well. A key value she holds dear is Respect."
+            name: "CSS",
+            image:"https://i.postimg.cc/SK6bsJ5B/css-318-698167.webp",
+            progress:"70%"
             },
             {
-            name: "Thokozani Nqwili",
-            image:'https://i.postimg.cc/7PQ78gTt/Thoko.jpg',
-            relationship:"Collegue",
-            testimony: "Buhle is a very dedicated individual with a positive mind set. She works well with people and she has the ability to think out of the box."
+            name: "Bootstrap",
+            image:'https://i.postimg.cc/cC5VjYgn/bootstrap-icons.png',
+            progress:"80%"
             },
             {
-            name: "Sibabalwe Mafestire",
-            image:'https://i.postimg.cc/XvzGSWrG/Siba.jpg',
-            relationship:"Collegue",
-            testimony: "Buhle is a dedicated individual who puts her all in her work and a good team player, good at planning and meeting deadlines"
+            name: "JavaScript",
+            image:'https://i.postimg.cc/Hk068XY9/Javascript-Logo.png',
+            progress:"60%"
             },
             {
-            name: "Sindile Kula",
-            image:"https://i.postimg.cc/Dwm7VXL6/Sindile.jpg",
-            relationship:"Collegue",
-            testimony:"Buhle is a bright young lady who is incredibly ambitious and laser-focused on her life goals.She has a fantastic memory and picks things up really quickly.She is a person who puts a lot of effort into whatever she does and tries her absolute best." 
+            name: "Vue.js",
+            image:"https://i.postimg.cc/4xGr0Jnw/logo.png",
+            progress:"60%",
             },
             {
-            name:"Sakhe Mzolisa",
-            image:"https://i.postimg.cc/dVz34Bpr/Sakhe.jpg",
-            relationship: "Collegue",
-            testimony:"Change is what drives Buhle. She is a go-getter who is committed to her work. She always looking forward in upskilling and developing her skills. A person who can mitigate between risks. A great advocate for honesty, assertiveness and resilience. She has a bubbly personality and is always willing to land a helping hand hence her nickname 'Bubbles'. A real asset to any environment she is in."
+            name:"Python",
+            image:"https://i.postimg.cc/N0zCQYG3/5968350.png",
+            progress: "5%",
             }
         ]
     }

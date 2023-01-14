@@ -1,83 +1,21 @@
 <template>
-        <h4 class="d-flex justify-content-center mt-5 p-5 text-white pb-10"> My skills</h4>
-        <div class="row mt-3">
-        <h4 class="text-white"></h4>
-        <div class="col-lg-6">
-            <div class="languages d-flex">
-            <p class="text-light mt-3">HTML</p>
-            <p class="text-light mt-3">95%</p>
-            </div>
-            <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div class="languages d-flex">
-            <p class="text-light mt-3">CSS</p>
-            <p class="text-light mt-3">70%</p>
-            </div>
-            <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div class="languages d-flex">
-            <p class="text-light mt-3">Bootstrap</p>
-            <p class="text-light mt-3">80%</p>
-            </div>
-            <div class="progress mb-5" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="languages d-flex">
-            <p class="text-light mt-3">JavaScript</p>
-            <p class="text-light mt-3">5%</p>
-            </div>
-            <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
-                aria-valuemax="100"></div>
-            </div>
-            <div class="languages d-flex">
-            <p class="text-light mt-3">Python</p>
-            <p class="text-light mt-3">5%</p>
-            </div>
-            <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
-                aria-valuemax="100"></div>
-            </div>
-            <div class="languages d-flex">
-            <p class="text-light mt-3">Microsoft Office</p>
-            <p class="text-light mt-3">100%</p>
-            </div>
-            <div class="progress mb-5" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-        <div class="mb-4 text-center">
-            <a href="./Assets/Buhle Qampi CV.pdf" download="">
-            <button type="button" class="btn btn-outline-secondary btn-lg rounded-pill">Download CV <i
-                class="fa-solid fa-download"></i></button>
-            </a>
-        </div>
-        </div>
-
-
-    <div class="col-2" v-for="item in projects" :key="item">
+    <div class="container">
+        <div class="col-2" v-for="item in projects" :key="item">
         <div>
         <div class="card">
             <img :src="item.image" 
-            style="width: 30rem;margin-left:3rem" 
+            style="width: 15rem;align-items: center" 
             />
             <div class="card-body">
                 <h5 class="card-title">{{ item.name }}</h5>
                 <p class="card-text">{{ item.description }}</p>
-                <button class="btn btn-primary">{{ item.github}}</button>
-                <button class="btn btn-primary">{{ item.netlify}}</button>
+                <button class="btn btn-primary"><a :href="item.git">GitHub</a></button>
+                <button class="btn btn-primary"><a :href="item.netlify">Netlify</a></button>
             </div>
         </div>
     </div>
     </div>
+</div>
 </template>
 <script>
 export default {
@@ -86,31 +24,37 @@ export default {
             projects: [
                 {
                 name: "HTML/CSS Portfolio",
+                image:"https://i.postimg.cc/PxFc5fC1/Portfolio.png",
                 description:"This was my first project in the form of a personal portfolio. I used HTML and CSS.",
-                GitHub:"",
-                Netlify:""
-                },
-                {name: "Netflix website",
-                description:"This was my first project in HTML and CSS.",
-                GitHub:"",
-                Netlify:""
+                GitHub:"https://github.com/buhleqampi/Portfolio.git",
+                Netlify:"https://buhle-qampi-portfolio.netlify.app"
                 },
                 {name: "E-commerce website",
+                image:"https://i.postimg.cc/NFn5DX5L/E-Commerce.png",
                 description:"E-commerce I used HTML and CSS.",
                 GitHub:"https://github.com/buhleqampi/Ecommerce.git",
                 Netlify:"https://buhleqampi-ecommerce-site.netlify.app/"
                 },
                 {
                 name: "JS Calculator",
+                image:"https://i.postimg.cc/3NtwRvgn/Calculator.png",
                 description:"E-commerce I used HTML and CSS.",
-                GitHub:"",
-                Netlify:""
+                GitHub:"https://github.com/buhleqampi/Javascript-calculator.git",
+                Netlify:"https://buhleqampi-js-calculator.netlify.app"
                 },
                 {
                 name: "Point of Sale",
-                description:"Lorem ggggggggggg.",
-                GitHub:"",
-                Netlify:"" 
+                image:"https://i.postimg.cc/HxtNbscJ/Point-of-sale.png",
+                description:"An end of module project using JavaScript",
+                GitHub:"https://github.com/buhleqampi/Javascript-project-2.git",
+                Netlify:"https://js-endof-module-project-2.netlify.app" 
+                },
+                {
+                name: "Vue Basics Exercise",
+                image:"https://i.postimg.cc/85K5kvdw/Vue.png",
+                description:"Got to work around with Vue basics and apply the framework to build an app.",
+                GitHub:"https://github.com/buhleqampi/Vue.js-first-project.git",
+                Netlify:"https://capable-crumble-edce9e.netlify.app" 
                 }
             ]
         }
@@ -118,6 +62,11 @@ export default {
     
 }
 </script>
-<style lang="">
+<style scoped>
+.container {
+    display: grid;
+    grid-template-columns: repeat (4,1fr);
+
+}
     
 </style>
