@@ -1,9 +1,10 @@
 <template>
-    <div class="col-2" v-for="item in projects" :key="item">
-        <div class="card">
+    <div>
+    <div class="container-fluid">
+        <div class="row gap-5 mx-3 d-sm-flex justify-content-center">
+    <div class="card" v-for="item in projects" :key="item">
             <img :src="item.image" 
-            style="width: 15rem;align-items: center" 
-            />
+            style="width: 15rem;"/>
             <div class="card-body">
                 <h5 class="card-title">{{ item.name }}</h5>
                 <p class="card-text">{{ item.description }}</p>
@@ -11,6 +12,8 @@
                 <button class="btn btn-primary"><a :href="item.netlify">Netlify</a></button>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </template>
 <script>
@@ -70,6 +73,7 @@ export default {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    width: 20rem;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  

@@ -1,6 +1,6 @@
 <template>
     <div class="LandingPage">
-        <h1 class="text-white text-center mb-10 mt-3">My name is Buhle Qampi</h1>
+        <h1 class="text-white text-center mb-10 mt-3">I am Buhle Qampi</h1>
         <a href="#about">
         <button type="button" class="btn btn-lg btn-outline-dark btn-outline-secondary rounded-pill mb-5">See
             more</button>
@@ -13,9 +13,10 @@
 </script>
 
 <style scoped>
-h1 {
+.text-white text-center mb-10 mt-3
+{
     color: blue;
-    font-size:large;
+    font-size:200px;
     font-style:Sans-serif;
 }
 </style>

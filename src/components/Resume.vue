@@ -1,16 +1,19 @@
 <template>
-    <div class="col-2" v-for="item in skills" :key="item">
-    <div class="card">
-        <img :src="item.image" 
-        style="width: 15em;align-items: center" 
-        />
-        <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <p class="card-text">{{ item.progress }}</p>
+    <div>
+    <div class="container-fluid">
+    <div class="row gap-5 mx-3 d-sm-flex justify-content-center">
+    <div class="card" v-for="item in skills" :key="item">
+            <img :src="item.image" 
+            style="width: 15rem;" 
+            />
+            <div class="card-body">
+                <h5 class="card-title">{{ item.name }}</h5>
+                <p class="card-text">{{ item.progress }}</p>
+            </div>
         </div>
     </div>
+    </div>
 </div>
-
 </template>
 
 <script>
@@ -59,6 +62,7 @@ data () {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    width: 20rem;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  

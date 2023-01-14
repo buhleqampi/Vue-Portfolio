@@ -1,22 +1,20 @@
 <template>
-    <div class="container text-center">
-    <div class="row">
-    <div class="col-3 d-grid">
-    <div class="crd" >
+    <div>
+    <div class="container-fluid">
+    <div class="row gap-5 mx-3 d-sm-flex justify-content-center">
             <div class="card" v-for="item in testimonials" :key="item">
                 <img :src="item.image" 
-                style="width: 15rem;" 
-                />
+                style="width: 15rem;"/>
                 <div class="card-body">
                     <h5 class="card-title">{{ item.name }}</h5>
                     <p class="card-text">{{ item.relationship }}</p>
-                    <p class="price">{{ item.testimony}}</p>
+                    <p class="testimony">{{ item.testimony}}</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
+
 
 </template>
 <script>
@@ -67,6 +65,7 @@ data () {
 } 
 </script>
 <style scoped>
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -78,12 +77,23 @@ data () {
 .card-body {
     padding: 2px 16px;
 }
-.crd {
-    display:grid !important;
-    grid-template-columns: repeat (2, 1fr ) !important;
-    grid-template-rows: repeat (3, 1fr ) !important;
-    gap: 2rem;
-    margin:5px;
+@media screen and (max-width: 720px) {
+    .card {
+        width: 20rem;
+    }
 }
 
+@media screen and (max-width:630px) {
+    .card {
+        width: 20rem;
+    }
+}
+
+
+@media screen and (max-width: 300px)
+{
+    .card {
+        width: 10rem;
+    }
+}
 </style>
