@@ -1,7 +1,5 @@
 <template>
-    <div class="container">
-        <div class="col-2" v-for="item in projects" :key="item">
-        <div>
+    <div class="col-2" v-for="item in projects" :key="item">
         <div class="card">
             <img :src="item.image" 
             style="width: 15rem;align-items: center" 
@@ -14,8 +12,6 @@
             </div>
         </div>
     </div>
-    </div>
-</div>
 </template>
 <script>
 export default {
@@ -55,7 +51,15 @@ export default {
                 description:"Got to work around with Vue basics and apply the framework to build an app.",
                 GitHub:"https://github.com/buhleqampi/Vue.js-first-project.git",
                 Netlify:"https://capable-crumble-edce9e.netlify.app" 
-                }
+                },
+                {
+                name: "My first coding project",
+                image:"https://i.postimg.cc/76ht5ghm/First-portfolio.png",
+                description:"Created a portfolio for my first coding project using HTML/CSS",
+                GitHub:"https://github.com/buhleqampi/My-Portfolio.git",
+                Netlify:"https://buhleqampi-1stportfolio.netlify.app/" 
+                },
+
             ]
         }
     }
@@ -63,10 +67,14 @@ export default {
 }
 </script>
 <style scoped>
-.container {
-    display: grid;
-    grid-template-columns: repeat (4,1fr);
-
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
-    
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+}
+.card-body {
+    padding: 2px 16px;
+}
 </style>

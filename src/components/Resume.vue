@@ -1,8 +1,5 @@
 <template>
-<div class="container">
-    <div>
     <div class="col-2" v-for="item in skills" :key="item">
-    <div>
     <div class="card">
         <img :src="item.image" 
         style="width: 15em;align-items: center" 
@@ -13,9 +10,7 @@
         </div>
     </div>
 </div>
-</div>
-</div>
-</div>
+
 </template>
 
 <script>
@@ -59,3 +54,17 @@ data () {
 }
 } 
 </script>
+
+<style scoped>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+}
+.card-body {
+    padding: 2px 16px;
+}
+
+</style>

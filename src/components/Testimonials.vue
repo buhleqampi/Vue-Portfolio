@@ -1,19 +1,23 @@
 <template>
-    <div class="container">
-        <div>
-        <div v-for="item in testimonials" :key="item" class="card">
-            <img :src="item.image" 
-            style="width: 15rem;align-items: center" 
-            />
-            <div class="card-body">
-                <h5 class="card-title">{{ item.name }}</h5>
-                <p class="card-text">{{ item.relationship }}</p>
-                <p class="price">{{ item.testimony}}</p>
+    <div class="container text-center">
+    <div class="row">
+    <div class="col-3 d-grid">
+    <div class="crd" >
+            <div class="card" v-for="item in testimonials" :key="item">
+                <img :src="item.image" 
+                style="width: 15rem;" 
+                />
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.name }}</h5>
+                    <p class="card-text">{{ item.relationship }}</p>
+                    <p class="price">{{ item.testimony}}</p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    
+</div>
+</div>
+
 </template>
 <script>
 
@@ -63,4 +67,23 @@ data () {
 } 
 </script>
 <style scoped>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20rem;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+}
+.card-body {
+    padding: 2px 16px;
+}
+.crd {
+    display:grid !important;
+    grid-template-columns: repeat (2, 1fr ) !important;
+    grid-template-rows: repeat (3, 1fr ) !important;
+    gap: 2rem;
+    margin:5px;
+}
+
 </style>

@@ -24,10 +24,7 @@ export default {
     }
 }
 </script>
-</script>
-.form {
 
-}
 <style scoped>
     
 </style>
