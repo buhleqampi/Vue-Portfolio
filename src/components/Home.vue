@@ -1,10 +1,11 @@
 <template>
     <div class="LandingPage">
-        <h1 class="text-white text-center mb-10 mt-3">I am Buhle Qampi</h1>
-        <a href="#about">
+        <h1 class="text-primary text-center mb-16 mt-5">I am.BUHLE QAMPI</h1>
+        <h2 class="text-primary text-center "><i>Full Stack Web Developer</i></h2>
+        <!-- <a href="#about">
         <button type="button" class="btn btn-lg btn-outline-dark btn-outline-secondary rounded-pill mb-5">See
             more</button>
-        </a>
+        </a> -->
     </div>
 </template>
 
@@ -13,10 +14,11 @@
 </script>
 
 <style scoped>
-.text-white text-center mb-10 mt-3
+.text-primary text-center mb-16 mt-5
 {
     color: blue;
-    font-size:200px;
+    font-size:200px !important;
     font-style:Sans-serif;
 }
+
 </style>

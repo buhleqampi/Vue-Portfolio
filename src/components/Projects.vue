@@ -8,8 +8,8 @@
             <div class="card-body">
                 <h5 class="card-title">{{ item.name }}</h5>
                 <p class="card-text">{{ item.description }}</p>
-                <button class="btn btn-primary"><a :href="item.git">GitHub</a></button>
-                <button class="btn btn-primary"><a :href="item.netlify">Netlify</a></button>
+                <h5><a :href="item.GitHub" target="_blank">Github</a></h5>
+                <h5><a :href="item.Netlify" target="_blank">Netlify</a></h5>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@ export default {
                 GitHub:"https://github.com/buhleqampi/Portfolio.git",
                 Netlify:"https://buhle-qampi-portfolio.netlify.app"
                 },
-                {name: "E-commerce website",
+                {name: "E-commerce Website",
                 image:"https://i.postimg.cc/NFn5DX5L/E-Commerce.png",
                 description:"E-commerce I used HTML and CSS.",
                 GitHub:"https://github.com/buhleqampi/Ecommerce.git",
@@ -37,7 +37,7 @@ export default {
                 {
                 name: "JS Calculator",
                 image:"https://i.postimg.cc/3NtwRvgn/Calculator.png",
-                description:"E-commerce I used HTML and CSS.",
+                description:"E-commerce I used HTML/CSS and JavaScript.",
                 GitHub:"https://github.com/buhleqampi/Javascript-calculator.git",
                 Netlify:"https://buhleqampi-js-calculator.netlify.app"
                 },
@@ -71,6 +71,7 @@ export default {
 </script>
 <style scoped>
 .card {
+    background-color: orange;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 20rem;
@@ -80,5 +81,8 @@ export default {
 }
 .card-body {
     padding: 2px 16px;
+}
+button {
+    padding:2px;
 }
 </style>

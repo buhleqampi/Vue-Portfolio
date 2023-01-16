@@ -36,7 +36,8 @@ export default {
 
 nav {
   padding: 30px;
-  background-color:#ECECEC ;
+  background-color: blue;
+
 }
 
 nav a {
@@ -44,13 +45,14 @@ nav a {
   color: #2c3e50;
   text-decoration: none;
   padding:5px;
+  display: inline;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: orange;
 }
 
 body {
-  background-color:#FF8B13;
+  background-color:#663399;
 }
 </style>
