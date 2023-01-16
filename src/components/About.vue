@@ -1,6 +1,7 @@
 <template>
-<section class="About mt-2" id="about">
-    <h2 class="d-flex justify-content-center p-5 text-black">ABOUT</h2> 
+    <div class="container px-5">
+    <div class="row" style="height: 100%;">
+    <h2 class="d-flex justify-content-center mt-5 text-white">About me</h2>
     <div class="container"> 
 <div class="row d-flex flex-column flex-sm-row justify-content-center">
 <div class="col"> 
@@ -16,7 +17,8 @@ work.Lastly I respect my fellow co-workers and address the management anytime I 
 </div>
 </div>
 </div> 
-</section>
+</div>
+</div>
 </template>
 
 <style scoped>

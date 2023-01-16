@@ -1,10 +1,9 @@
 <template>
     <div>
     <div class="container-fluid">
-    <div class="row gap-5 mx-3 d-sm-flex justify-content-center">
+    <div class="row gy-3 gap-5 mx-3 d-sm-flex justify-content-center">
             <div class="card" v-for="item in testimonials" :key="item">
-                <img :src="item.image" 
-                style="width: 15rem;"/>
+                <img :src="item.image" class="mx-auto d-block" style="width: 15rem;"/>
                 <div class="card-body">
                     <h5 class="card-title">{{ item.name }}</h5>
                     <p class="card-text">{{ item.relationship }}</p>

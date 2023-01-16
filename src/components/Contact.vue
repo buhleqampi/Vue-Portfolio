@@ -1,27 +1,64 @@
 <template>
-        <form action="https://formspree.io/f/{form_id}" method="post">
-            <div class="mb-3">
-            <label for="exampleInputname" class="form-label">Full Name</label>
-            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Insert your full name..." required>
+    <div class="container px-5">
+        <div class="row" style="height: 100%;">
+        <h2 class="d-flex justify-content-center mt-5 text-white">Contact me</h2>
+        </div>
+    <form target="_blank" action="https://formspree.io/f/xqknwllo" method="POST">
+        <div class="row mt-4">
+        <div class="col-lg-6 my-3 shadow">
+            <input required type="text" name="name" class="form-control bg-white text-white" id="name"
+            placeholder="Name" style="height: 50px;">
+        </div>
+        <div class="col-lg-6 my-3 shadow">
+            <input required type="email" name="email" class="form-control bg-white text-white" id="email"
+            placeholder="Email" style="height: 50px;">
+        </div>
+        <div class="mt-4 shadow">
+            <textarea id="message" class="form-control bg-white text-white"
+            placeholder="Tell us more about your needs...." style="height: 200px;"></textarea>
+        </div>
+        <div class="my-4 text-center">
+            <button type="submit" class="btn btn-lg btn-danger btn-outline-secondary rounded-pill">Send
+            message</button>
+        </div>
+        </div>
+    </form>
+    
+        <div class="row mt-5">
+        <div class="col-lg-4 my-2">
+            <h4 class="text-white my-4">Address</h4>
+            <div class="row text-light mt-4">
+            <div class="icon text-danger">
+                <i class="fa-solid fa-location-dot"></i>
             </div>
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email address..." required>
-            <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" required>
+            <p>22 Jacob Street</p>
+            <p>Nyanga</p>
+            <p>7750</p>
             </div>
-            <button v-on:click.prevent="display" >Submit</button>
-        </form>
+        </div>
+        <div class="row mt-4">
+            <div class="phone d-flex flex-row">
+            <div class="icon text-danger">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <p class="text-light ms-3">(065) 559 8353</p>
+            </div>
+            <div class="mobile d-flex flex-row">
+            <div class="icon text-danger">
+                <i class="fa-solid fa-mobile"></i>
+            </div>
+            <p class="text-light ms-3">(063) 063 0263</p>
+            </div>
+            <div class="email d-flex flex-row">
+            <div class="icon text-danger">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <p class="text-light ms-3">buhle3857@gmail.com</p>
+            </div>
+        </div>
+        </div>
+        </div>
 </template>
-<script>
-export default {
-    methods: {
-        display() {
-            alert("Are you sure you want to submit this?");
-        }    
-    }
-}
-</script>
 
 <style scoped>
 div {

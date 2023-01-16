@@ -2,11 +2,9 @@
     <div class="LandingPage">
         <h1 class="text-primary text-center mb-16 mt-5">I am.BUHLE QAMPI</h1>
         <h2 class="text-primary text-center "><i>Full Stack Web Developer</i></h2>
-        <!-- <a href="#about">
-        <button type="button" class="btn btn-lg btn-outline-dark btn-outline-secondary rounded-pill mb-5">See
-            more</button>
-        </a> -->
+        <img src="https://i.postimg.cc/Pr4TJnbq/Whats-App-Image-2022-11-17-at-14-50-22-removebg-preview.png"  />
     </div>
+    
 </template>
 
 <script>
