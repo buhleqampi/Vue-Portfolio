@@ -1,4 +1,7 @@
 <template>
+    <div class="container px-5">
+        <div class="row" style="height: 100%;">
+        <h2 class="d-flex justify-content-center mt-5 text-white">Resume</h2>
     <div>
     <div class="container-fluid">
     <div class="row gap-5 mx-3 d-sm-flex justify-content-center">
@@ -11,6 +14,8 @@
         </div>
     </div>
     </div>
+</div>
+</div>
 </div>
 </template>
 

@@ -2,7 +2,6 @@
     <div class="container px-5">
         <div class="row" style="height: 100%;">
         <h2 class="d-flex justify-content-center mt-5 text-white">Contact me</h2>
-        </div>
     <form target="_blank" action="https://formspree.io/f/xqknwllo" method="POST">
         <div class="row mt-4">
         <div class="col-lg-6 my-3 shadow">
@@ -58,6 +57,8 @@
         </div>
         </div>
         </div>
+        </div>
+        
 </template>
 
 <style scoped>
